@@ -25,7 +25,7 @@ ln -s "`pwd`/Export-and-install.py" ~/Library/Application\ Support/Glyphs/Script
 
 Restart Glyphs.app.
 
-<img width="797" alt="Screenshot of the installed script in the menu" src="https://user-images.githubusercontent.com/103399/36138983-09b0cdc8-109c-11e8-914e-df7686172225.png">
+<img width="100%" alt="Screenshot of the installed script in the menu" src="https://user-images.githubusercontent.com/103399/36192636-b62c0b1e-1162-11e8-9d87-1a517ef26c36.png">
 
 
 
