@@ -1,5 +1,6 @@
 #MenuTitle: Export and install font
 # -*- coding: utf-8 -*-
+from __future__ import division, print_function, unicode_literals
 __doc__="""
 Exports and installs all active instances of this font and avoids caching.
 """
@@ -18,11 +19,11 @@ for instance in font.instances:
 			oldFonts = [f for f in os.listdir(installFolder) if re.match(filePattern, f)]
 			for oldFont in oldFonts:
 				os.remove(installFolder + "/" + oldFont)
-				print "Uninstalled %s" % oldFont
+				print("Uninstalled %s" % oldFont)
 			fileName = "%s-%s.otf" % (instance.fontName, suffix)
-			print "Exporting %s" % fileName
+			print("Exporting %s" % fileName)
 			instance.generate(FontPath = installFolder + "/" + fileName)
-	except Exception, e:
-		print e
-print "Exported and installed %s" % font.familyName
+	except Exception as e:
+		print(e)
+print("Exported and installed %s" % font.familyName)
 Glyphs.showNotification("Export and install fonts", "Exported and installed %s" % font.familyName)
